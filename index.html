@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Events</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 5px;
+            color: #00ffcc;
+        }
+        p.subtitle {
+            color: #aaaaaa;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+        .grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .event-card {
+            background: #1e1e1e;
+            border-radius: 12px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 350px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+            text-align: left;
+        }
+        .event-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .event-info {
+            padding: 15px;
+        }
+        .event-desc {
+            font-size: 14px;
+            color: #dddddd;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>📅 PROSSIMI EVENTI</h1>
+    <p class="subtitle">I portali dell'intrattenimento si aprono...</p>
+
+    <div class="grid">
+        
+        <div class="event-card">
+            <!-- Sostituisci locandina.jpg con il nome esatto della tua immagine -->
+            <img src="locandina.jpg" alt="Locandina Evento">
+            
+            <div class="event-info">
+                <div class="event-desc">
+                    Scrivi qui la descrizione del tuo evento: inserisci i dettagli, le informazioni utili o quello che preferisci che i giocatori leggano!
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let tg = window.Telegram.WebApp;
+        tg.expand();
+    </script>
+</body>
+</html>
